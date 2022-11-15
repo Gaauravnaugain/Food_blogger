@@ -53,6 +53,8 @@ gem "bootsnap", require: false
 #Authentication
 gem 'devise'
 
+#For debugging the program
+gem 'pry', '~> 0.13.1'
 # Use Sass to process CSS
 # gem "sassc-rails"
 
