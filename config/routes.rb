@@ -4,17 +4,12 @@ Rails.application.routes.draw do
   sessions: 'users/sessions'
   }
   
-  devise_scope :user do
-    get '/signout', to: 'devise/sessions#destroy', as: :signout
-  end
 
-  devise_scope :user do
-    root to: "users/sessions#new"
-  end
+  get '/signout', to: 'users#destroy', as: :signout
 
   
   # Defines the root path route ("/")
-   # root "users#index"
+   root "users#index"
    resources :users do
     resources :shops do
       resources :menus

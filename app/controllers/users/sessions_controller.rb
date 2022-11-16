@@ -8,7 +8,7 @@ class Users::SessionsController < Devise::SessionsController
 
   # GET /resource/sign_in
   def new
-    @user=User.new
+    super
   end
 
   # POST /resource/sign_in
@@ -18,7 +18,7 @@ class Users::SessionsController < Devise::SessionsController
 
   # DELETE /resource/sign_out
   def destroy
-    user[:session] = nil
+    super
   end
 
   # protected
