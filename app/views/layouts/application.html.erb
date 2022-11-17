@@ -14,8 +14,7 @@
     <p class = "notice"><%= notice %></p>
     <p class = "alert"><%= alert %></p>
     <% if current_user %>
-      <%= current_user.email %>
-      <%= button_to "Log out" , destroy_user_session_path ,method: :delete, data:{turbo: false} %>
+      <%=current_user.name %><br>
     <% else %>
       <%#= link_to "Register" , new_user_registration_path %>  
     <% end %>  

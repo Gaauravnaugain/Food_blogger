@@ -1,2 +1,19 @@
-index page
+<!-- <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+  <button type="button" class="btn btn-danger">Page not found as it is under progress please logout</button>  
+</div> -->
+
+<h1>Users List</h1>
+
+<ul>
+  <% @users.each do |user| %>
+    <li>
+      <%= link_to user.name, user %>
+    </li>
+  <% end %>
+</ul>
+
+<%= link_to "New Article", new_user_path %>
+
+<%= button_to "Log out" , destroy_user_session_path ,method: :delete, data:{turbo: false} %>
+
 
