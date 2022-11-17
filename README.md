@@ -1,3 +1,5 @@
 Food blogging application
 
-Using devise gem for authentication
+Using devise gem used for Authentication
+
+Added CRUD action for User controller.
