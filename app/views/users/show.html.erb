@@ -1,12 +1,23 @@
-<h1><%= @user.name %></h1>
-
-<p><%= @user.contact_no %></p>
-
-<ul>
-  <li><%= link_to "Edit", edit_user_path(@user) %></li>
+<div class="p-3 mb-2 bg-primary text-white">
   
-  <li><%= button_to "Log out" , destroy_user_session_path ,method: :delete, data:{turbo: false} %></li>
-</ul>
+  <h1> <%= @user.name %> </h1>
+
+  <p> <%= @user.contact_no %> </p>
+
+  <ul>
+    <li> <%= button_to "Edit", edit_user_path(@user),:method => :get %> </li>
+  </ul> 
+
+  <ul>    
+    <li> <%= button_to "Log out" , destroy_user_session_path ,method: :delete, data:{turbo: false} %> </li>
+  </ul>
+
+<footer>
+  
+  <p> <%= @user.contact_no %> </p>
+</footer>
+  
+</div>
 
 <!-- <h2>Comments</h2>
 <%#= render @article.comments%>

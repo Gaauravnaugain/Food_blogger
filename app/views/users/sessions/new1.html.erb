@@ -1,8 +1,9 @@
 <section class="vh-100 vh-bg">
   <div class="container-fluid h-custom">
     <div class="row d-flex justify-content-center align-items-center h-100">
-      <div class="col-md-9 col-lg-6 col-xl-5">h2>Log in</h2>
-    </div>
+      <div class="col-md-9 col-lg-6 col-xl-5">
+        <%#= image_tag 'bg.jpg', class: "img-fluid", alt: "img" %>
+      </div>
       <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
         <%= form_for(resource, as: resource_name, url: session_path(resource_name),data:{turbo: false}) do |f| %>
 
@@ -35,7 +36,9 @@
               <%= link_to "Sign up", new_registration_path(resource_name), class: "text-primary" %>
             </p>
           </div>
+
         <% end %>
+
       </div>
     </div>
   </div>

@@ -1,0 +1,17 @@
+.vh-bg {
+  background: url("food.jpeg") no-repeat scroll bottom center / cover;
+}
+.divider:after, .divider:before {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: #eee;
+}
+.h-custom {
+  height: 100%;
+}
+
+.form-label,.text-primary,.small,.mb-4,.form-check-label,.form-check,.em{
+   color: blue;
+  }
+
