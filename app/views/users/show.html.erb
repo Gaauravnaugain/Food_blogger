@@ -19,19 +19,15 @@
   
 </div>
 
-<!-- <h2>Comments</h2>
-<%#= render @article.comments%>
+ <h2>Reviews</h2>
+<%= render @user.reviews%>
 <h2>Add a comment:</h2>
-<%#= form_with model: [ @article, @article.comments.build ] do |form| %>
+<%= form_with model: [ @user, @user.reviews.build ] do |form| %>
   <p>
-    <%#= form.label :commenter %><br>
-    <%#= form.text_field :commenter %>
+    <%= form.label :reviews %><br>
+    <%= form.text_field :body %>
   </p>
   <p>
-    <%#= form.label :body %><br>
-    <%#= form.text_area :body %>
-  </p>
-  <p>
-    <%#= form.submit %>
-  </p> -->
-<%# end %>
+    <%= form.submit %>
+  </p> 
+<% end %>

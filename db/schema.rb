@@ -10,11 +10,10 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_11_16_114140) do
-  create_table "menus", force: :cascade do |t|
-    t.string "name"
-    t.text "reviews"
-    t.string "ratings"
+ActiveRecord::Schema[7.0].define(version: 2022_11_21_064009) do
+  create_table "reviews", force: :cascade do |t|
+    t.string "title"
+    t.string "description"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
